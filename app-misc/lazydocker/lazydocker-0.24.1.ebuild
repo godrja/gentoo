@@ -15,16 +15,15 @@ RDEPEND="app-containers/docker"
 DOCS=( {CODE-OF-CONDUCT,CONTRIBUTING,README}.md docs )
 
 src_compile() {
-    ego build -o bin/lazydocker \
-        -ldflags "-X main.version=${PV}"
+	ego build -o bin/lazydocker \
+		-ldflags "-X main.version=${PV}"
 }
 
 src_test() {
-    ego test ./... -short
+	ego test ./... -short
 }
 
 src_install() {
-    dobin bin/lazydocker
-    einstalldocs
+	dobin bin/lazydocker
+	einstalldocs
 }
-

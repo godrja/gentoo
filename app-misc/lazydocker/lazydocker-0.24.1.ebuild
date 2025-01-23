@@ -6,7 +6,7 @@ DESCRIPTION="The lazier way to manage everything docker"
 HOMEPAGE="https://github.com/jesseduffield/lazydocker"
 SRC_URI="https://github.com/jesseduffield/lazydocker/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="MIT License"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
